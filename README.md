@@ -13,14 +13,17 @@
     # kubectl run --image=mmumshad/simple-webapp-color --env="APP_COLOR=red" --restart=Never simple-web-app-color 
   ## 2) expose the service
     # kubectl port-forward simple-web-app-color 8080:8080 --address 0.0.0.0
-  ## 3) delete the created deployment
+  ## 3) create a deployment for scaling
     # kubectl create deployment --image=nginx:1.18.0 nginx-deployment
-  ## 3) delete the created deployment
+  ## 3) define 2 replicasets
     # kubectl scale --replicas=2 deployment/nginx-deployment
-  ## 3) delete the created deployment
-    # kubectl get deployments.apps -o wide
-  ## 3) delete the created deployment
+  ## 3) Update the used image 
     # kubectl set image deployment/nginx-deployment nginx=nginx
+  ## 3) get deployments
+    # kubectl get deployments.apps -o wide
+  ## 
+     # NAME               READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES   SELECTOR
+     # nginx-deployment   2/2     2            2           17m   nginx        nginx    app=nginx-deployment
   ## 3) delete the created deployment
     # kubectl get replicasets.apps -o wide
   ## 
