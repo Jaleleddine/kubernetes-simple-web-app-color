@@ -21,6 +21,8 @@
     # kubectl get deployments.apps -o wide
   ## 3) delete the created deployment
     # kubectl set image deployment/nginx-deployment nginx=nginx
+  ## 3) delete the created deployment
+    # kubectl get replicasets.apps -o wide
   ## 
       # NAME                          DESIRED   CURRENT   READY   AGE     CONTAINERS   IMAGES         SELECTOR
       # nginx-deployment-54dcb8f666   2         2         2       7m7s    nginx        nginx          app=nginx-deployment,pod-template-hash=54dcb8f666
