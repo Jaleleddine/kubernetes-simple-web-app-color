@@ -22,9 +22,9 @@
   ## 3) delete the created deployment
     # kubectl set image deployment/nginx-deployment nginx=nginx
   
-    # NAME                          DESIRED   CURRENT   READY   AGE     CONTAINERS   IMAGES         SELECTOR
-    # nginx-deployment-54dcb8f666   2         2         2       7m7s    nginx        nginx          app=nginx-deployment,pod-template-hash=54dcb8f666
-    # nginx-deployment-6fcdb8cc74   0         0         0       8m44s   nginx        nginx:1.18.0   app=nginx-deployment,pod-template-hash=6fcdb8cc74
+      # NAME                          DESIRED   CURRENT   READY   AGE     CONTAINERS   IMAGES         SELECTOR
+      # nginx-deployment-54dcb8f666   2         2         2       7m7s    nginx        nginx          app=nginx-deployment,pod-template-hash=54dcb8f666
+      # nginx-deployment-6fcdb8cc74   0         0         0       8m44s   nginx        nginx:1.18.0   app=nginx-deployment,pod-template-hash=6fcdb8cc74
     
 
     
