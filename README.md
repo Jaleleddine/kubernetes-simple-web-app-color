@@ -24,7 +24,7 @@
   ## 
      # NAME               READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES   SELECTOR
      # nginx-deployment   2/2     2            2           17m   nginx        nginx    app=nginx-deployment
-  ## 3) delete the created deployment
+  ## 3) get replicasets, one with updated version 
     # kubectl get replicasets.apps -o wide
   ## 
       # NAME                          DESIRED   CURRENT   READY   AGE     CONTAINERS   IMAGES         SELECTOR
