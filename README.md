@@ -1,6 +1,6 @@
 # kubernetes-tutorial
   # 1) create a pod using a manifest 
-    kubectl apply -f pod.yaml
+    kubectl apply -f pod.yaml #
   # 2) get the created pods
     kubectl get pdos
   # 3) expose the service
